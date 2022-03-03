@@ -7,29 +7,31 @@
         <form>
             <h1>Payment Form</h1>
             <h2>Contact Information</h2>
-            <p>Name: <input type ="text" name="name"></p>
+            <p>Fields required are followed by *</p>
+            <p>Name: * <input type ="text" name="name" required></p>
             <p>
                 <fieldset>
                     <legend>Gender</legend>
                     Male<input type="radio" name="gender" id="male">Female<input type="radio" name ="gender" id="female">
                 </fieldset>
             </p>
-            <p>Address: <textarea name="address" id="address" cols="100" rows="4"></textarea></p>
-            <p>Email: <input type="email" name="email" id="email"></p>
-            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <p>Address: * <textarea name="address" id="address" cols="100" rows="4" required></textarea></p>
+            <p>Email: * <input type="email" name="email" id="email" required></p>
+            <p>Pincode: * <input type="number" name="pincode" id="pincode" required></p>
             <hr>
             <h2>Payment Information</h2>
-            <p>Card Type:
+            <p>Card Type: *
                 <select name="card_type" id="card_type">
-                    <option value="">-->Select a card type<--</option>
+                    <option value="">>--Select a card type--<</option>
                     <option value="Visa">Visa</option>
                     <option value="Master Card">Master Card</option>
                     <option value="Rupay">Rupay</option>
                 </select>
+                required
             </p>
-            <p>Card Number: <input type="number" name="card_no" id="card_no"></p>
-            <p>Expiration Date: <input type="date" name="exp_date" id="exp_date"></p>
-            <p>CVV: <input typ="password" name="cvv" id="cvv"></p>
+            <p>Card Number: * <input type="number" name="card_no" id="card_no" required></p>
+            <p>Expiration Date: * <input type="date" name="exp_date" id="exp_date" required></p>
+            <p>CVV: * <input type="password" name="cvv" id="cvv" required></p>
             <input type="submit" value="Pay now">
         </form>
     </body>
